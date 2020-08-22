@@ -1,3 +1,7 @@
+/* 
+=============HEADER================
+*/
+
 header{
     width: 100vw;
     background: var(--color-primary-lighter);
@@ -33,7 +37,45 @@ header .content a:hover{
     color: var(--color-text-complement);
 }
 
+/* 
+=============FOOTER================
+*/
+
+
+
+footer{
+    background: var(--color-primary-light);    
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: var(--color-title-in-primary);
+    border-top: 1px solid #eaeaea;
+    justify-self: end;
+}
+
+footer .content{
+    width: 100vw;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;    
+    padding: 5rem 0;
+}
+
+footer .content p{
+    text-align: center;
+    margin: 1rem 0;
+}
+footer .links{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (max-width: 425px) {
+
+/* 
+=============HEADER================
+*/
 
     header .content nav{
         display: none;
@@ -42,7 +84,6 @@ header .content a:hover{
     .menu-toggle {
         width: 40px;
         height: 30px;
-        
     }
     
     .one,
@@ -92,8 +133,8 @@ header .content a:hover{
 
     .menu-section.on .menu-toggle{
         position: absolute;
-        right: 25px;
-        top: 15px;
+        right: 20px;
+        top: 20px;
     }
 
     .menu-section.on .menu-toggle .one {
@@ -107,4 +148,13 @@ header .content a:hover{
     .menu-section.on .menu-toggle .three {
         transform: rotate(-45deg) translate(8px, -9px);
     }
+
+/* 
+=============FOOTER================
+*/
+
+    footer .links{
+        flex-direction: column;
+    }
 }
+

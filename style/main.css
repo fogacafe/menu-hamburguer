@@ -32,6 +32,18 @@
 html,body{
     margin: 0;
     padding: 0;
+    background: var(--color-background);
 }
 
+@media (max-width: 425px){
+    :root{
+        font-size: 80%;
+    }
+}
 
+#container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
